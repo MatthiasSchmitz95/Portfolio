@@ -1,17 +1,16 @@
 .content {
     position: relative;
     padding-left: 100px;
-    padding-right: 100px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     background: radial-gradient(102.53% 81.55% at 46.74% 3.94%, #1A2743 0.37%, #27334B 13.54%, #141D2F 71.91%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
     color: white;
     z-index: 3;
+    padding-bottom: 250px;
 
 }
-span {
+.vector-import {
     position: absolute;
     left: 0;
     top: 385px;
@@ -26,6 +25,9 @@ h2 {
     margin: 0px;
 }
 
+p{
+    margin: 0px;
+}
 .left-container{
     
 width: 500px;
@@ -33,6 +35,22 @@ width: 500px;
 }
 
 .right-container{
+    span{
+        width: 267px;
+        height: 4px;
+        background-color:  #00BEE8 ;
+        position: relative !important;
+        scale: 1 !important;
+        rotate: 0deg !important;
+    }
+display: flex;
+align-items: center;
+
+
+
+}
+
+.img-container{
     width: 50%;
     width: 453px;
     height: 453px;

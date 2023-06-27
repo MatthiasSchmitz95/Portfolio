@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeSectionComponent } from './home-section/home-section.component';
 import { AboutSectionComponent } from './about-section/about-section.component';
+import { SkillSectionComponent } from './skill-section/skill-section.component';
+import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeSectionComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    SkillSectionComponent,
+    PortfolioSectionComponent
   ],
   imports: [
     BrowserModule,
