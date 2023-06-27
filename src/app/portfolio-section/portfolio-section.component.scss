@@ -1,0 +1,40 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    
+    span{
+        position: absolute;
+        background-color: #4B47FF;
+        height: 4px;
+    }
+
+    h2{
+        margin:0px;
+    }
+
+}
+
+.left{
+    width: 10%;
+    left: 300px;
+}
+
+.right{
+    width: 484px;
+    right: 0px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    
+}

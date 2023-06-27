@@ -1,23 +1,30 @@
 .content {
     position: relative;
-    padding-left: 100px;
+    padding-left: 240px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    background: radial-gradient(102.53% 81.55% at 46.74% 3.94%, #1A2743 0.37%, #27334B 13.54%, #141D2F 71.91%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(102.53% 81.55% at 46.74% 3.94%, #1A2743 0.37%, #27334B 13.54%, #141D2F 71.91%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
     color: white;
     z-index: 3;
     padding-bottom: 250px;
 
 }
+
 .vector-import {
     position: absolute;
     left: 0;
-    top: 385px;
-    scale: 1.7;
+    top: 300px;
+    width: 100%;
     rotate: 2deg;
     z-index: 1;
-    
+    img{
+        width: 100%;
+
+    }
+
 }
 
 h2 {
@@ -25,32 +32,35 @@ h2 {
     margin: 0px;
 }
 
-p{
+p {
     margin: 0px;
 }
-.left-container{
-    
-width: 500px;
+
+.left-container {
+
+    width: 500px;
 
 }
 
-.right-container{
-    span{
+.right-container {
+    span {
         width: 267px;
         height: 4px;
-        background-color:  #00BEE8 ;
+        background-color: #00BEE8;
         position: relative !important;
         scale: 1 !important;
         rotate: 0deg !important;
     }
-display: flex;
-align-items: center;
+
+
+    display: flex;
+    align-items: center;
 
 
 
 }
 
-.img-container{
+.img-container {
     width: 50%;
     width: 453px;
     height: 453px;
@@ -59,17 +69,23 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    
+    img{
+        height: 470px;
+        object-fit: fill;
+    }
 
 }
 
-.icon-container{
+.icon-container {
     width: 80px;
     height: 80px;
     border: 1px solid white;
     margin-right: 10px;
 }
 
-.onside{
+.onside {
     display: flex;
     align-items: center;
 }

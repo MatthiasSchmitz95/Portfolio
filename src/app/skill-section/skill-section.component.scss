@@ -18,7 +18,7 @@ p {
 
 .content {
     position: relative;
-    padding-left: 100px;
+    padding-left: 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,10 +48,11 @@ p {
 }
 
 .skill-info {
-    padding-right: 100px;
+    padding-right: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     button {
 

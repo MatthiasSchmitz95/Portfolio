@@ -3,11 +3,22 @@ body{
     font-family: 'poppins';
     margin: 0px;
     overflow-x: hidden;
+    background-color: #141D2F;
 }
 
 button{
   cursor: pointer;
 }
+
+h2{
+  color: white;
+  font-size: 90px;
+
+}
+p{
+  color: white;
+}
+
 
 /* poppins-100 - latin */
 @font-face {
