@@ -1,6 +1,6 @@
 .content {
     position: relative;
-    padding-left: 240px;
+    padding-left: 300px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -15,13 +15,14 @@
 
 .vector-import {
     position: absolute;
+    rotate: 3deg;
     left: 0;
-    top: 300px;
-    width: 100%;
-    rotate: 2deg;
-    z-index: 1;
+    top: 242px;
+
+
     img{
-        width: 100%;
+        width: 100vw;
+        object-fit: cover;
 
     }
 
@@ -44,7 +45,7 @@ p {
 
 .right-container {
     span {
-        width: 267px;
+        width: 300px;
         height: 4px;
         background-color: #00BEE8;
         position: relative !important;
