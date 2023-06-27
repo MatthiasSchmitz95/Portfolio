@@ -1,0 +1,23 @@
+.content {
+    font-family: 'poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #141D2F;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
+    font-size: 23px;
+
+
+    p:hover{
+        cursor: pointer;
+    }
+
+}
