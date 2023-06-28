@@ -7,18 +7,16 @@
 }
 
 .content-head {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 450px;
+    padding-right: 450px;
     display: flex;
     justify-content: space-between;
     z-index: 3;
     background-image:url('../../assets/background-img/profile-background.png') ;
     background-repeat: no-repeat;
     background-position-y: 52px;
-    background-position-x:100px ;
+    background-position-x:250px ;
     background-size: contain;
-
-
 }
 
 .profile-img-container {
@@ -28,8 +26,6 @@
     img{
         height: 751px;
         object-fit: cover;
-        
-
     }
 }
 
