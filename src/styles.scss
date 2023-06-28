@@ -19,6 +19,11 @@ p{
   color: white;
 }
 
+.reverse-row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 
 /* poppins-100 - latin */
 @font-face {

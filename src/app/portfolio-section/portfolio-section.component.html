@@ -8,10 +8,12 @@
 
         </div>
         <p>This page is a sample of my work - please feel free to try them out</p>
-        <app-project-sample [img]="'../..assets/samples/join.png'" [text]="'test'" [skills]="'Firebase'" [description]="'Test'"></app-project-sample>
-        <app-project-sample></app-project-sample>
-        <app-project-sample></app-project-sample>
-        <app-project-sample></app-project-sample>
+
+        <div>  
+        <app-project-sample img="../../assets/samples/join.png" [title]="'Join'" [skills]="'Angular | Typescript | CSS | Firebase'" [description]="'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. '"></app-project-sample>
+        <app-project-sample class="reverse-row" img="../../assets/samples/pollo-loco 1.png" [title]="'El pollo loco'" [skills]="'JavaScript | HTML | CSS'" [description]="'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'"></app-project-sample>
+        <app-project-sample img="../../assets/samples/Simple CRM photo.png" [title]="'Simple CRM'" [skills]="'Angular | Firebase'" [description]="'A very Simple Customer Relationship Management system working with CRUD functionality.'"></app-project-sample>
+        
         
 
     </div>
