@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-section.component.scss']
 })
 export class HomeSectionComponent {
+  sources = [
+    '../../assets/icons/Github button.svg',
+    '../../assets/icons/Email button.svg',
+    '../../assets/icons/Linkedin button.svg', 
+  ]
 
 }

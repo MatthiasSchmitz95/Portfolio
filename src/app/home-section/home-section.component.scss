@@ -3,27 +3,33 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #141D2F;
-    
+
+}
+
+.background-wrapper{
+    position: absolute;
+    background-image: url('../../assets/background-img/profile-background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -147px;
+    width: 860px;
+    height: 860px;
+
 }
 
 .content-head {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     z-index: 3;
-    background-image:url('../../assets/background-img/profile-background.png') ;
-    background-repeat: no-repeat;
-    background-position-y: 52px;
-    background-position-x:250px ;
-    background-size: contain;
+
 }
 
 .profile-img-container {
     position: relative;
     z-index: 0;
 
-    img{
+    img {
         height: 751px;
         object-fit: cover;
     }
@@ -79,17 +85,6 @@
         border: 4px solid #4B47FF;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
-        margin-right: 21px;
-    }
-
-    a {
-        margin-left: 21px;
-        margin-right: 21px;
-        text-decoration: none;
-        color: white;
-        display: flex;
-        align-items: center;
-
     }
 
     margin-top: 30px;
@@ -98,7 +93,29 @@
     align-items: center;
     justify-content: space-between;
     min-height: 200px;
-    z-index: 2;
+    z-index: 4;
+    margin-left: -100px;
+
+
+
+}
+.img-wrapper{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    a {
+        color: white;
+        display: flex;
+        align-items: center;
+
+       img:hover{
+            width: 40px;
+        }
+
+    }
 }
 
 .link-container {
@@ -126,12 +143,45 @@ p {
     margin: 0px;
 }
 
+.home-button-container {
+    width: 180px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .home-button {
+    width: 165px;
+    height: 58px;
     color: white;
     font-size: 23px;
     background-color: #00BEE8;
     border-radius: 15px;
     padding: 15px 30px 15px 30px;
-    cursor: pointer;
+    z-index: 4;
+
+    &:hover {
+        padding: 20px 40px 20px 40px;
+        background-color: #4B47FF;
+        width: 185px;
+        height: 68px;
+
+    }
+
+}
+
+.vector-import {
+    position: absolute;
+    rotate: 3deg;
+    left: 0px;
+    top: 400px;
+
+
+    img{
+        width: 100vw;
+        object-fit: cover;
+
+    }
 
 }

@@ -18,7 +18,6 @@ p {
 
 .content {
     position: relative;
-    padding-left: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,20 +34,19 @@ p {
 .skill-icons {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    z-index: 4;
 }
 
 .skill-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-right: 100px;
     margin-bottom: 100px;
 
 }
 
 .skill-info {
-    padding-right: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,6 +57,7 @@ p {
         padding: 15px 30px 15px 30px;
         border-radius: 10px;
         background-color: #00BEE8;
+        color: white;
 
     }
 
@@ -76,6 +75,7 @@ p {
         border-top-left-radius: 25px;
         right: 0px;
         position: absolute;
+        margin-right: -100px;
 
         
 
@@ -85,8 +85,21 @@ p {
 
 .skill-decoration{
     margin-bottom: 20px;
-
     display: flex;
     align-items: center;
+
+}
+
+.background-wrapper{
+    width: 800px;
+    height: 861px;
+    left: 0px;
+    position: absolute;
+    margin-left: -200px;
+    margin-bottom: -345px;
+    background-image: url('../../assets/background-img/bg2.png');
+    background-repeat: no-repeat;
+    background-position:100px 100px;
+    z-index: 0;
 
 }

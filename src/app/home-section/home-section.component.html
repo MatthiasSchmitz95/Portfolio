@@ -1,42 +1,52 @@
 <div class="content">
     <div class="content-head">
+        <div class="background-wrapper"></div>
         <div class="profile-img-container ">
-            <img src="../../assets/myImg/front-no-smile.png" alt="">
+            <img src="../../assets/myImg/front1.png" alt="">
         </div>
-    
+
         <div class="name-container">
             <div class="row">
                 <p class="t-size-1">I am</p>
-    
+
                 <div class="center">
                     <p class="t-size-2">Matthias Schmitz</p>
                     <p class="t-size-3">FRONTEND DEVELOPER</p>
                 </div>
 
             </div>
+            <div class="home-button-container">
+                <button class="home-button">Lets Talk!</button> 
+            </div>
 
-            <button class="home-button">Lets Talk!</button>
-    
+
         </div>
+        <span class="vector-import"><img src="../../assets/background-img/Vector.svg" alt=""></span>
     </div>
 
 
     <div class="socials">
         <div class="link-container">
             <span></span>
-            <a href=""><img src="../../assets/icons/Github button.svg" alt="Github"></a>
-            <a href=""><img src="../../assets/icons/Email button.svg" alt="Email"></a>
-            <a href=""><img src="../../assets/icons/Linkedin button.svg" alt="Linkedin"></a>
-            
+
+            <div *ngFor="let src of sources">
+                <div class="img-wrapper">
+                    <a href=""><img src="{{src}}" alt=""></a>
+                </div>
+            </div>
+
+
+
+
             <a href="email">m6schmitz123@gmail.com</a>
 
         </div>
 
         <div class="scroll-container">
-            
+
             <p> Scroll down</p>
             <img src="../../assets/icons/arrow-down-line.png" alt="arrow down">
-        
+
         </div>
 
     </div>

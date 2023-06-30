@@ -3,8 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 300px;
-    padding-right: 300px;
     background-color: #141D2F;
     color: white;
 }
@@ -14,10 +12,12 @@
     justify-content: space-between;
     gap: 29px;
     font-size: 23px;
+    transition: 200ms;
 
 
     p:hover{
         cursor: pointer;
+        color: #00BEE8;
     }
 
 }

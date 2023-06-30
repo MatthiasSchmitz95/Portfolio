@@ -17,7 +17,6 @@ export class SkillSectionComponent {
     { name: 'Firebase', src: '../../assets/icons/Firebase.svg' },
     { name: 'Javascript', src: '../../assets/icons/Javascript.svg' },
     { name: 'Angular', src: '../../assets/icons/Angular.svg' },
-    { name: 'Test Automation', src: '../../assets/icons/Frame.svg' }
   ];
 
 

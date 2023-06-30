@@ -1,0 +1,27 @@
+.content{
+    height:291px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 4px solid #00BEE8;
+    margin-left: -100px;
+    margin-right: -100px;
+
+    img{
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.socials{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

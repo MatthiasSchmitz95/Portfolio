@@ -1,26 +1,63 @@
 .content{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
 }
 
 h3{
-    color: #9747FF;
+    color: #4B47FF;
     font-size:    32px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 p{
-    color: #70E61C;
+    color: #00BEE8;
     font-size:    23px;
+    margin: 0;
+    margin-bottom: 10px;
     
 }
 
 span{
     color: white;
     font-size:    16px;
+    margin: 0;
+    display: block;
+    width: 600px;
+    margin-bottom: 20px;
 }
 
 img{
     width: 520px;
     height: 520px;
+    margin-right: 50px;
     
+}
+
+a{
+    padding:15px 30px 15px 30px;
+    font-size: 23px;
+    border-radius: 10px;
+    color: white;
+
+    &:hover{
+        background-color: #00BEE8;
+
+    }
+
+}
+
+.test{
+    background-color: #4B47FF;
+    border: none;
+}
+
+
+.github{
+    border: 1px solid #00BEE8;
+    background-color: transparent;
+    margin-left: 50px;
 }

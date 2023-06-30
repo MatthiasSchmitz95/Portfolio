@@ -1,4 +1,4 @@
-import { Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-project-sample',
@@ -10,9 +10,11 @@ export class ProjectSampleComponent implements OnInit {
   @Input() skills: String;
   @Input() description: string;
   @Input() title: string;
+  @Input() github: string;
+  @Input() website: string;
 
   ngOnInit(): void {
-    console.log(this.img,this.skills);
+    console.log(this.img, this.skills);
   }
 
 
