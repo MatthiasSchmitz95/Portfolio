@@ -29,16 +29,16 @@
         <div class="link-container">
             <span></span>
 
-            <div *ngFor="let src of sources">
+            <div *ngFor="let src of sources; let i = index">
                 <div class="img-wrapper">
-                    <a href=""><img src="{{src}}" alt=""></a>
+                    <a href="{{links[i]}}" target="_blank" rel="noreferrer noopener"><img src="{{src}}" alt=""></a>
                 </div>
             </div>
 
 
 
 
-            <a href="email">m6schmitz123@gmail.com</a>
+            <a href="mailto:your-email@example.com">m6schmitz123@gmail.com</a>
 
         </div>
 

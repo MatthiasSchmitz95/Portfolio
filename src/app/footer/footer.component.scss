@@ -14,9 +14,29 @@ $-distance : -22%;
 
     img{
         width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
+
+
+        &:hover{
+            width: 40px;
+            cursor: pointer;
+        }
     }
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    width: 40px;
 }
 
 .socials{
