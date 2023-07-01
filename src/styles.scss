@@ -1,11 +1,12 @@
+$distance : 15%;
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: 'poppins';
   margin: 0px;
   overflow-x: hidden;
   background-color: #141D2F;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: $distance;
+  padding-right: $distance;
 }
 
 button {

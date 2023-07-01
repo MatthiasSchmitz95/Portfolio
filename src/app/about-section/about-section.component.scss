@@ -1,10 +1,12 @@
+$distance : 15%;
+$-distance : -22%;
 .content {
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     color: white;
-    z-index: 3;
+    z-index: 6;
     padding-bottom: 250px;
 
 
@@ -16,7 +18,7 @@
     top: -266px;
     right: -394px;
     position: absolute;
-    margin-right: -100px;
+    margin-right: $-distance;
     background-image: url('../../assets/background-img/bg1.png');
     background-repeat: no-repeat;
     background-position:100px 100px;
@@ -53,7 +55,7 @@ p {
 
     display: flex;
     align-items: center;
-    margin-right: -100px;
+    margin-right: $-distance;
 
 
 

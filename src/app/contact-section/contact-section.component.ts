@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-section.component.scss']
 })
 export class ContactSectionComponent {
+  scrollTo(id:string){
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 
 }

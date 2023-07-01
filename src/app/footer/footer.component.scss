@@ -1,3 +1,6 @@
+$distance : 15%;
+$-distance : -22%;
+
 .content{
     height:291px;
     color: white;
@@ -6,8 +9,8 @@
     align-items: center;
 
     border-top: 4px solid #00BEE8;
-    margin-left: -100px;
-    margin-right: -100px;
+    margin-left: $-distance;
+    margin-right: $-distance;
 
     img{
         width: 30px;
@@ -18,8 +21,8 @@
 
 .socials{
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: $distance;
+    padding-right: $distance;
     display: flex;
     justify-content: space-between;
     align-items: center;

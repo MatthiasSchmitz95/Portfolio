@@ -1,3 +1,5 @@
+$distance : 15%;
+$-distance : -22%;
 .header {
     display: flex;
     flex-direction: column;
@@ -30,14 +32,14 @@
 
 .left {
     width: 10%;
-    left: 300px;
+    left: 10%;
 
 
 }
 
 .right {
-    margin-right: -100px;
-    width: 484px;
+    margin-right: $-distance;
+    width: 41%;
     right: 0px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
@@ -51,7 +53,7 @@
     top: 630px;
     left: 0px;
     position: absolute;
-    margin-left: -100px;
+    margin-left: $-distance;
     background-image: url('../../assets/background-img/bg3.png');
     background-repeat: no-repeat;
     background-position: -34px 108px;
@@ -68,7 +70,7 @@
     bottom: -224px;
     right: 0px;
     position: absolute;
-    margin-right: -100px;
+    margin-right: $-distance;
     background-image: url('../../assets/background-img/bg4.png');
     background-repeat: no-repeat;
     background-position: 19px -295px;
