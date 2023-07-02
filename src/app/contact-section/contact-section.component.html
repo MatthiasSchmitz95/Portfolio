@@ -6,31 +6,39 @@
     </div>
 
 
-<div class="contact-container">
-    <div>
-        <p>Got a problem to solve?</p>
-        <span>Contact me through this form, I am interested in hearing you,<br>
-             knowing your ideas and contributing to your projects with my work. <br>
+    <div class="contact-container">
+        <div>
+            <p>Got a problem to solve?</p>
+            <span>Contact me through this form, I am interested in hearing you,<br>
+                knowing your ideas and contributing to your projects with my work. <br>
             </span>
-        <span>Need a Frontend developer? <b>Contact me!</b></span>
-    </div>
+            <span>Need a Frontend developer? <b>Contact me!</b></span>
+        </div>
 
 
         <form class="contact-form" action="send_email.php" method="POST">
-           
-                <input class="data" type="text" name="name" placeholder="Your name">
-                <input class="data" type="email" name="email" placeholder="Your email">
-                <textarea class="message" name="message" placeholder="Your message"></textarea>
-            
+            <input id="inputName" (click)="inputCheck('inputName','errName')"
+                (input)="inputCheck('inputName','errName')" class="data" type="text" name="name"
+                placeholder="Your name">
+            <div style="display: none;" class="err" id="errName">Your name is required </div>
+
+            <input id="inputEmail" (click)="inputCheck('inputEmail','errEmail')"
+                (input)="inputCheck('inputEmail','errEmail')" class="data" type="email" name="email"
+                placeholder="Your email">
+            <div style="display: none;" class="err" id="errEmail">Your valid email is requiered </div>
+            <textarea id="inputMessage" (click)="inputCheck('inputMessage','errMessage')"
+                (input)="inputCheck('inputMessage','errMessage')" class="message" name="message"
+                placeholder="Your message"></textarea>
+            <div style="display: none;" class="err" id="errMessage">Your message is required </div>
+
             <div class="send-container">
                 <button class="send" type="submit">Send message :)</button>
             </div>
         </form>
-        
-    
-</div>
-<div class="flex-end" >
-    <img (click)="scrollTo('header')" class="circle" src="../../assets/icons/arrow-down-line.png" alt="arrow-up">
-</div>
-</div>
 
+
+    </div>
+    <div class="flex-end">
+        <img (click)="scrollTo('header')" class="circle" src="../../assets/icons/arrow-down-line.png" alt="arrow-up">
+    </div>
+</div>

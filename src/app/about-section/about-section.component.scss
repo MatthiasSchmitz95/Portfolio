@@ -1,5 +1,6 @@
 $distance : 15%;
 $-distance : -22%;
+
 .content {
     position: relative;
     display: flex;
@@ -12,7 +13,7 @@ $-distance : -22%;
 
 }
 
-.background-wrapper{
+.background-wrapper {
     width: 800px;
     height: 800px;
     top: -266px;
@@ -21,7 +22,7 @@ $-distance : -22%;
     margin-right: $-distance;
     background-image: url('../../assets/background-img/bg1.png');
     background-repeat: no-repeat;
-    background-position:100px 100px;
+    background-position: 100px 100px;
 
 }
 
@@ -38,7 +39,6 @@ p {
 
 .left-container {
 
-    width: 500px;
 
 }
 
@@ -72,8 +72,8 @@ p {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
-    img{
+
+    img {
         height: 1000px;
         position: absolute;
         top: -55px;
@@ -84,8 +84,23 @@ p {
 .icon-container {
     width: 80px;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    margin-right: 20px;
+.img{
+
+        width: 70px;
+        height: 70px;
+
+        &:hover{
+            width: 80px;
+            height: 80px;
+
+        }
+
+    
 }
 
 .onside {
