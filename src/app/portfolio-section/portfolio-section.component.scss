@@ -78,3 +78,9 @@ $-distance : -22%;
 
     }
     
+    @media(max-width:1000px){
+        .background-wrapper{
+            transform: scale(0.7);
+
+        }
+    }

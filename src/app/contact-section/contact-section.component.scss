@@ -230,3 +230,13 @@ input {
     background-position: 600px 21px;
 }
 
+@media(max-width:1000px){
+    .line{
+        margin-left: -6%;
+        width: 20px;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

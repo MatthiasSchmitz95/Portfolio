@@ -137,3 +137,37 @@ p {
     z-index: 0;
 
 }
+
+@media(max-width:1000px){
+    .content{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .skill-info{
+        align-items: flex-end;
+       
+       span{
+        margin-right: -5%;
+        width: 28px;
+       }
+       p{
+        text-align: right;
+       }
+        
+    }
+
+    .skill-icons{
+        grid-template-columns: auto auto auto ;
+        width: 100%;
+
+    }
+
+    .skill-icon{
+
+        margin-right: 0px;
+    }
+
+
+
+}

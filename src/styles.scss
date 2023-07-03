@@ -29,6 +29,14 @@ a {
   color: white;
 }
 
+@media(max-width:1000px) {
+  body{
+    padding-left: 5%;
+    padding-right: 5%;
+  };
+  
+}
+
 
 
 

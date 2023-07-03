@@ -21,3 +21,29 @@
     }
 
 }
+
+.hamburger-menu{
+    display: none;
+
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+@media(max-width:1000px){
+    .menu{
+        display: none;
+
+    }
+    .hamburger-menu{
+        display: flex;
+        cursor: pointer;
+    }
+
+
+}

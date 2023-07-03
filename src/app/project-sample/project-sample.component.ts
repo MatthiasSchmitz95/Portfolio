@@ -14,7 +14,7 @@ export class ProjectSampleComponent implements OnInit {
   @Input() website: string;
 
   ngOnInit(): void {
-    console.log(this.img, this.skills);
+
   }
 
 

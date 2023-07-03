@@ -1,6 +1,7 @@
 .content{
     display: flex;
     align-items: center;
+    
     justify-content: space-between;
     z-index: 3;
     position: relative;
@@ -61,3 +62,44 @@ a{
     background-color: transparent;
     margin-left: 50px;
 }
+
+
+
+@media(max-width:1000px){
+    .content{
+        margin-bottom: 100px;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 390px;
+            height: 390px;
+            margin-right: 0px;
+    
+        }
+    }
+    .order{
+
+        h3{
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+    
+    .button-container{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+}
+

@@ -1,5 +1,6 @@
 $distance : 15%;
 $-distance : -22%;
+
 .content {
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@ $-distance : -22%;
 
 }
 
-.background-wrapper{
+.background-wrapper {
     position: absolute;
     background-image: url('../../assets/background-img/profile-background.png');
     background-repeat: no-repeat;
@@ -23,7 +24,7 @@ $-distance : -22%;
     padding: 0px;
     display: flex;
     justify-content: space-between;
-   
+
 
 }
 
@@ -44,6 +45,8 @@ $-distance : -22%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 195px;
+    z-index: 4;
 
 }
 
@@ -54,10 +57,14 @@ $-distance : -22%;
 
 .t-size-1 {
     font-size: 64px;
-    rotate: -90deg;
+    rotate: -180deg;
     color: white;
     margin: 0px;
-    height: 64px;
+    height: auto !important;
+    writing-mode: vertical-lr;
+    width: fit-content;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
 
 }
 
@@ -102,19 +109,21 @@ $-distance : -22%;
 
 
 }
-.img-wrapper{
+
+.img-wrapper {
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+
     a {
         color: white;
         display: flex;
         align-items: center;
 
-       img:hover{
+        img:hover {
             width: 40px;
         }
 
@@ -178,8 +187,36 @@ p {
 .vector-import {
     position: absolute;
     left: 0px;
-    top: 309px;
+    top: 163px;
     width: 100vw;
-    z-index: 5;
+    z-index: 3;
 
+}
+
+@media(max-width:1000px) {
+    .content-head {
+        flex-direction: column;
+    }
+
+    .profile-img-container {
+        justify-content: center;
+        display: flex;
+    }
+
+    .vector-import{
+        top: 595px;
+    }
+
+    .background-wrapper{
+        margin-left: -28px;
+    }
+    .information{
+        display: flex;
+    }
+    .scroll-container{
+        display: none;
+    }
+    .socials{
+        margin-left: -5%;
+    }
 }

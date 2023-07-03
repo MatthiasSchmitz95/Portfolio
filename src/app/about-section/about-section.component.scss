@@ -37,10 +37,7 @@ p {
     margin: 0px;
 }
 
-.left-container {
-
-
-}
+.left-container {}
 
 .right-container {
     span {
@@ -89,21 +86,27 @@ p {
     justify-content: center;
 }
 
-.img{
+.img {
 
-        width: 70px;
-        height: 70px;
+    width: 70px;
+    height: 70px;
 
-        &:hover{
-            width: 80px;
-            height: 80px;
+    &:hover {
+        width: 80px;
+        height: 80px;
 
-        }
+    }
 
-    
+
 }
 
 .onside {
     display: flex;
     align-items: center;
+}
+
+@media(max-width:1000px){
+    .right-container{
+        display: none;
+    }
 }
