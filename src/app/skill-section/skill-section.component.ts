@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyServiceService } from '../my-service.service';
 
 @Component({
   selector: 'app-skill-section',
@@ -18,6 +19,13 @@ export class SkillSectionComponent {
     { name: 'Javascript', src: '../../assets/icons/Javascript.svg' },
     { name: 'Angular', src: '../../assets/icons/Angular.svg' },
   ];
+
+  constructor(private myService: MyServiceService){
+
+  }
+  public scrollTo(elementId: string): void {
+    this.myService.scrollTo(elementId);
+  }
 
 
 }

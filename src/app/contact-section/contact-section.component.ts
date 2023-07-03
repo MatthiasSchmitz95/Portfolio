@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyServiceService } from '../my-service.service';
 
 @Component({
   selector: 'app-contact-section',
@@ -6,10 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-section.component.scss']
 })
 export class ContactSectionComponent {
-  scrollTo(id:string){
-    document.getElementById(id).scrollIntoView({
-      behavior: 'smooth'
-    });
+  constructor(private myService: MyServiceService){
+
+  }
+  public scrollTo(elementId: string): void {
+    this.myService.scrollTo(elementId);
   }
 
   inputCheck(inputId:string,errId:string){

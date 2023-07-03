@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyServiceService } from '../my-service.service';
 
 @Component({
   selector: 'app-home-section',
@@ -17,5 +18,11 @@ export class HomeSectionComponent {
     "https://github.com/MatthiasSchmitz95"
 
   ]
+  constructor(private myService: MyServiceService){
+
+  }
+  public scrollTo(elementId: string): void {
+    this.myService.scrollTo(elementId);
+  }
 
 }

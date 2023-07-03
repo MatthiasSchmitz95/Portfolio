@@ -12,6 +12,7 @@ export class ProjectSampleComponent implements OnInit {
   @Input() title: string;
   @Input() github: string;
   @Input() website: string;
+  @Input() reverse: boolean;
 
   ngOnInit(): void {
 
