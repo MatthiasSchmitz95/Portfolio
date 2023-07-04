@@ -27,7 +27,7 @@ span{
     font-size:    16px;
     margin: 0;
     display: block;
-    width: 600px;
+    
     margin-bottom: 20px;
 }
 
@@ -70,6 +70,7 @@ a{
 
 
 @media(max-width:1000px){
+
     .content{
         margin-bottom: 100px;
         flex-direction: column;
