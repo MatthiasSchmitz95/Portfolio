@@ -187,7 +187,7 @@ p {
 .vector-import {
     position: absolute;
     left: 0px;
-    top: 163px;
+    top: 307px;
     width: 100vw;
     z-index: 3;
 
@@ -201,6 +201,11 @@ p {
     .profile-img-container {
         justify-content: center;
         display: flex;
+    }
+
+    .name-container{
+        margin-bottom: 0px;
+        margin-top: 80px;
     }
 
     .vector-import{

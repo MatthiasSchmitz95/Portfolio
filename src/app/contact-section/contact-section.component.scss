@@ -100,6 +100,9 @@ input {
     padding: 15px 25px 15px 25px;
     resize: vertical;
     margin-top: 30px;
+    background-image: url('../../assets/background-img/resizer.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) calc(100% - 10px);
     
 
     &::placeholder {
@@ -120,11 +123,12 @@ input {
         outline: none;
         border: 1px solid #00BEE8;
 
+
     }
 
     &::-webkit-resizer {
 
-        background-color: #4B47FF;
+        background-color: transparent;
     }
 }
 
@@ -202,7 +206,7 @@ input {
     background-image: url('../../assets/background-img/bg5.png');
     background-repeat: no-repeat;
     background-position-y: 393px;
-    z-index: 0;
+    z-index: -1;
 
 
 }
@@ -215,6 +219,23 @@ input {
     justify-content: flex-start;
 }
 
+
+
+.err-message{
+    border : 1px solid #E61C40 !important;
+    background-image : url('../../assets/background-img/red-error.png'),url('../../assets/background-img/resizer.png');
+    background-repeat: no-repeat;
+    background-position: 600px 21px,calc(100% - 10px) calc(100% - 10px);
+
+}
+.viable-message{
+    border : 1px solid #70E61C !important;
+    background-image : url('../../assets/background-img/green-check.png'),url('../../assets/background-img/resizer.png');
+    background-repeat: no-repeat;
+    background-position: 600px 21px,calc(100% - 10px) calc(100% - 10px);
+
+}
+
 .viable{
     border : 1px solid #70E61C !important;
     background-image : url('../../assets/background-img/green-check.png');
@@ -223,12 +244,13 @@ input {
 }
 
 .error{
-
     border : 1px solid #E61C40 !important;
     background-image : url('../../assets/background-img/red-error.png');
     background-repeat: no-repeat;
     background-position: 600px 21px;
 }
+
+
 
 @media(max-width:1000px){
     .line{

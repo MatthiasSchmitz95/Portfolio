@@ -15,6 +15,7 @@ export class ContactSectionComponent {
   }
 
   inputCheck(inputId:string,errId:string){
+ 
     console.log(inputId);
     let check = document.getElementById(inputId) as HTMLInputElement;
     let err = document.getElementById(errId);
@@ -34,4 +35,26 @@ export class ContactSectionComponent {
 
   }
 
-}
+  textCheck(textId:string,errId:string){
+   
+    console.log(textId);
+    let check = document.getElementById(textId) as HTMLInputElement;
+    let err = document.getElementById(errId);
+    
+    if (check.value.length > 2) {
+      check.classList.remove('err-message');
+      check.classList.add('viable-message');
+      err.style.display = 'none';
+    }
+
+    else{
+      check.classList.remove('viable-message');
+      check.classList.add('err-message');
+      err.style.display = 'block';
+    }
+
+  }
+
+  }
+
+
