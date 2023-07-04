@@ -154,6 +154,12 @@ button {
 
 }
 
+@media(max-width:1200px){
+    .skill-icon{
+        margin-right: 41px;
+    }
+}
+
 @media(max-width:1000px){
     .content{
         flex-direction: column-reverse;

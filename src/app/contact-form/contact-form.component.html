@@ -1,0 +1,19 @@
+<form class="contact-form" action="https://matthias-schmitz.developerakademie.net/send_mail.php" method="POST">
+    <input id="inputName" (click)="inputCheck('inputName','errName')"
+        (input)="inputCheck('inputName','errName')" class="data" type="text" name="name"
+        placeholder="Your name">
+    <div style="display: none;" class="err" id="errName">Your name is required </div>
+
+    <input id="inputEmail" (click)="inputCheck('inputEmail','errEmail')"
+        (input)="inputCheck('inputEmail','errEmail')" class="data" type="email" name="email"
+        placeholder="Your email">
+    <div style="display: none;" class="err" id="errEmail">Your valid email is requiered </div>
+    <textarea id="inputMessage" (click)="textCheck('inputMessage','errMessage')"
+        (input)="textCheck('inputMessage','errMessage')" class="message" name="message"
+        placeholder="Your message"></textarea>
+    <div style="display: none;" class="err" id="errMessage">Your message is required </div>
+
+    <div class="send-container">
+        <button class="send" type="submit">Send message :)</button>
+    </div>
+</form>

@@ -29,6 +29,13 @@ a {
   color: white;
 }
 
+@media(max-width:1450px) {
+  body{
+    padding-left: 10%;
+    padding-right: 10%;
+  };
+}
+
 @media(max-width:1000px) {
   body{
     padding-left: 5%;

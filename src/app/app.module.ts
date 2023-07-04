@@ -11,6 +11,7 @@ import { PortfolioSectionComponent } from './portfolio-section/portfolio-section
 import { ProjectSampleComponent } from './project-sample/project-sample.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioSectionComponent,
     ProjectSampleComponent,
     ContactSectionComponent,
-    FooterComponent
+    FooterComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

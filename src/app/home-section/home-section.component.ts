@@ -8,9 +8,9 @@ import { MyServiceService } from '../my-service.service';
 })
 export class HomeSectionComponent {
   sources = [
-    '../../assets/icons/Github button.svg',
-    '../../assets/icons/Email button.svg',
-    '../../assets/icons/Linkedin button.svg'
+    'assets/icons/Github button.svg',
+    'assets/icons/Email button.svg',
+    'assets/icons/Linkedin button.svg'
   ];
   links =[
     "https://github.com/MatthiasSchmitz95",

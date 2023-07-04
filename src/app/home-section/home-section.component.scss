@@ -64,7 +64,7 @@ $-distance : -22%;
     writing-mode: vertical-lr;
     width: fit-content;
     margin-block-start: 0em !important;
-    margin-block-end: 0em !important;
+
 
 }
 
@@ -73,6 +73,7 @@ $-distance : -22%;
     font-weight: 700;
     margin: 0px;
     color: white;
+    line-height: 97px;
 }
 
 .t-size-3 {
@@ -80,6 +81,7 @@ $-distance : -22%;
     font-weight: 400;
     margin: 0px;
     color: #4B47FF;
+    line-height: 81px;
 }
 
 .center {
@@ -193,6 +195,69 @@ p {
 
 }
 
+@media(max-width:1700px) {
+    .vector-import {
+        top: 192px;
+    }
+}
+
+@media(max-width:1280px) {
+    .profile-img-container {
+
+        img {
+            height: 484px;
+        }
+    }
+
+    .name-container {
+        margin-bottom: 0px;
+    }
+
+
+}
+
+@media(max-width:1840px) {
+    .t-size-1 {
+        font-size: 32px;
+        line-height: 27px;
+        margin-right: 6px;
+    }
+
+    .t-size-2 {
+        font-size: 45px;
+        line-height: 54px;
+
+    }
+
+    .t-size-3 {
+        font-size: 38px;
+        line-height: 34.8px;
+
+    }
+}
+
+@media(max-width:505px) {
+    .t-size-1 {
+        font-size: 25px;
+        line-height: 27px;
+        margin-right: 0px;
+    }
+
+    .t-size-2 {
+        font-size: 27px;
+        line-height: 37px;
+
+
+    }
+
+    .t-size-3 {
+        font-size: 23px;
+        line-height: 31.8px;
+
+    }
+
+}
+
 @media(max-width:1000px) {
     .content-head {
         flex-direction: column;
@@ -201,27 +266,41 @@ p {
     .profile-img-container {
         justify-content: center;
         display: flex;
+        img{
+            height: 608px;
+        }
+       
     }
 
-    .name-container{
+    .name-container {
         margin-bottom: 0px;
         margin-top: 80px;
     }
 
-    .vector-import{
-        top: 595px;
+    .vector-import {
+        top: 432px;
+
     }
 
-    .background-wrapper{
+    .background-wrapper {
         margin-left: -28px;
     }
-    .information{
+
+    .information {
         display: flex;
     }
-    .scroll-container{
+
+    .scroll-container {
         display: none;
     }
-    .socials{
+
+    .socials {
         margin-left: -5%;
+    }
+
+    .responsive {
+
+        display: none;
+
     }
 }

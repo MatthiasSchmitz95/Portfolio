@@ -1,0 +1,184 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    color: white;
+    background-color: transparent;
+    width: 617px;
+    height: 68px;
+    border: 1px solid #4B47FF;
+    border-radius: 10px;
+    padding: 15px 25px 15px 25px;
+
+    &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1;
+        font-size: 16px;
+        /* Firefox */
+    }
+
+    &:hover {
+        border: 1px solid #00BEE8;
+
+
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid #00BEE8;
+
+
+
+    }
+
+}
+
+.data {
+    margin-top: 20px;
+    height: 38px;
+}
+
+.message {
+    height: 202px;
+    color: white;
+    background-color: transparent;
+    width: 617px;
+    border: 1px solid #4B47FF;
+    border-radius: 10px;
+    padding: 15px 25px 15px 25px;
+    resize: vertical;
+    margin-top: 30px;
+    background-image: url('../../assets/background-img/resizer.png');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) calc(100% - 10px);
+    
+
+    &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1;
+        font-size: 16px;
+        /* Firefox */
+    }
+
+    &:hover {
+        border: 1px solid #00BEE8;
+
+
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid #00BEE8;
+
+
+    }
+
+    &::-webkit-resizer {
+
+        background-color: transparent;
+    }
+}
+
+.send-container {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.send {
+    margin-top: 30px;
+    padding: 15px 30px 15px 30px;
+    background-color: #00BEE8;
+    width: 253px;
+    height: 58px;
+    border-radius: 10px;
+    color: white;
+    font-size: 23px;
+
+
+    &:hover {
+        padding: 20px 40px 20px 40px;
+        background-color: #4B47FF;
+        width: 273px;
+        height: 68px;
+
+
+    }
+
+}
+
+.err{
+    margin-top: 7px;
+    color: #E61C40 ;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.err-message{
+    border : 1px solid #E61C40 !important;
+    background-image : url('../../assets/background-img/red-error.png'),url('../../assets/background-img/resizer.png');
+    background-repeat: no-repeat;
+    background-position: 600px 21px,calc(100% - 10px) calc(100% - 10px);
+
+}
+.viable-message{
+    border : 1px solid #70E61C !important;
+    background-image : url('../../assets/background-img/green-check.png'),url('../../assets/background-img/resizer.png');
+    background-repeat: no-repeat;
+    background-position: 600px 21px,calc(100% - 10px) calc(100% - 10px);
+
+}
+
+.viable{
+    border : 1px solid #70E61C !important;
+    background-image : url('../../assets/background-img/green-check.png');
+    background-repeat: no-repeat;
+    background-position: 600px 21px;
+}
+
+.error{
+    border : 1px solid #E61C40 !important;
+    background-image : url('../../assets/background-img/red-error.png');
+    background-repeat: no-repeat;
+    background-position: 600px 21px;
+}
+
+@media(max-width:1000px){
+    input{
+        width: 100%;
+    }
+
+    .message{
+        width: 100%;
+    }
+    .contact-container{
+        align-items: center;
+    }
+
+    .contact-form{
+        align-items: center;
+        width: 500px;
+    }
+}
+
+@media(max-width:600px){
+    .contact-form{
+        width: 280px;
+    }
+}

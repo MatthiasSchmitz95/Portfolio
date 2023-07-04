@@ -8,16 +8,16 @@ import { MyServiceService } from '../my-service.service';
 })
 export class SkillSectionComponent {
   images = [
-    { name: 'Api', src: '../../assets/icons/Api.svg' },
-    { name: 'Git', src: '../../assets/icons/Git.svg' },
-    { name: 'Html', src: '../../assets/icons/Html.svg' },
-    { name: 'Css', src: '../../assets/icons/Css.svg' },
-    { name: 'WordPress', src: '../../assets/icons/Wp.svg' },
-    { name: 'Scrum', src: '../../assets/icons/Scrum.svg' },
-    { name: 'Typescript', src: '../../assets/icons/Ts.svg' },
-    { name: 'Firebase', src: '../../assets/icons/Firebase.svg' },
-    { name: 'Javascript', src: '../../assets/icons/Javascript.svg' },
-    { name: 'Angular', src: '../../assets/icons/Angular.svg' },
+    { name: 'Api', src: 'assets/icons/Api.svg' },
+    { name: 'Git', src: 'assets/icons/Git.svg' },
+    { name: 'Html', src: 'assets/icons/Html.svg' },
+    { name: 'Css', src: 'assets/icons/Css.svg' },
+    { name: 'WordPress', src: 'assets/icons/Wp.svg' },
+    { name: 'Scrum', src: 'assets/icons/Scrum.svg' },
+    { name: 'Typescript', src: 'assets/icons/Ts.svg' },
+    { name: 'Firebase', src: 'assets/icons/Firebase.svg' },
+    { name: 'Javascript', src: 'assets/icons/Javascript.svg' },
+    { name: 'Angular', src: 'assets/icons/Angular.svg' },
   ];
 
   constructor(private myService: MyServiceService){
