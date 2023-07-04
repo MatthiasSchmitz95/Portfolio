@@ -134,14 +134,14 @@ input {
     border : 1px solid #E61C40 !important;
     background-image : url('../../assets/background-img/red-error.png'),url('../../assets/background-img/resizer.png');
     background-repeat: no-repeat;
-    background-position: 600px 21px,calc(100% - 10px) calc(100% - 10px);
+    background-position: calc(100% - 20px) 21px,calc(100% - 10px) calc(100% - 10px);
 
 }
 .viable-message{
     border : 1px solid #70E61C !important;
     background-image : url('../../assets/background-img/green-check.png'),url('../../assets/background-img/resizer.png');
     background-repeat: no-repeat;
-    background-position: 600px 21px,calc(100% - 10px) calc(100% - 10px);
+    background-position: calc(100% - 20px) 21px,calc(100% - 10px) calc(100% - 10px);
 
 }
 
@@ -149,14 +149,14 @@ input {
     border : 1px solid #70E61C !important;
     background-image : url('../../assets/background-img/green-check.png');
     background-repeat: no-repeat;
-    background-position: 600px 21px;
+    background-position: calc(100% - 20px) 21px;
 }
 
 .error{
     border : 1px solid #E61C40 !important;
     background-image : url('../../assets/background-img/red-error.png');
     background-repeat: no-repeat;
-    background-position: 600px 21px;
+    background-position: calc(100% - 20px) 21px;
 }
 
 @media(max-width:1000px){
