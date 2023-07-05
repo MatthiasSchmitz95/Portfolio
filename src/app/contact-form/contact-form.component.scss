@@ -126,6 +126,7 @@ input {
     font-size: 12px;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
 
@@ -159,26 +160,33 @@ input {
     background-position: calc(100% - 20px) 21px;
 }
 
-@media(max-width:1000px){
+
+@media(max-width:729px){
+    
     input{
-        width: 100%;
+        width: 247px;
     }
+    
 
     .message{
-        width: 100%;
-    }
-    .contact-container{
-        align-items: center;
+        width: 247px;
     }
 
-    .contact-form{
-        align-items: center;
-        width: 500px;
-    }
 }
 
 @media(max-width:600px){
     .contact-form{
         width: 280px;
     }
+
+    input{
+        height: 40px;
+    }
+
+    .message{
+        height: 40px;
+    }
+    
 }
+
+

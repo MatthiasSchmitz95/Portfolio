@@ -12,6 +12,7 @@ import { ProjectSampleComponent } from './project-sample/project-sample.componen
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { MenuSlideContainerComponent } from './menu-slide-container/menu-slide-container.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ProjectSampleComponent,
     ContactSectionComponent,
     FooterComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    MenuSlideContainerComponent
   ],
   imports: [
     BrowserModule,

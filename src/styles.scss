@@ -38,10 +38,16 @@ a {
 
 @media(max-width:1000px) {
   body{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
   };
   
+}
+
+@media(max-width:800px){
+  h2{
+    font-size: 45px !important;
+  }
 }
 
 

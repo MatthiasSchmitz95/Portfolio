@@ -42,7 +42,7 @@ export class ContactFormComponent {
     else{
       check.classList.remove('viable-message');
       check.classList.add('err-message');
-      err.style.display = 'block';
+      err.style.display = 'flex';
     }
 
   }

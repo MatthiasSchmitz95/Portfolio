@@ -164,13 +164,16 @@ button {
     .content{
         flex-direction: column-reverse;
         align-items: flex-end;
+        h2{
+            margin-right: 30px;
+        }
     }
 
     .skill-info{
         align-items: flex-end;
        
        span{
-        margin-right: -5%;
+        margin-right: -20px;
         width: 28px;
        }
        p{
