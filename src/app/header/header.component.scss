@@ -102,11 +102,6 @@ $distance:200px;
         cursor: pointer;
         z-index: 15;
     }
-
-
-}
-
-@media(max-width:800px) {
     .content {
         position: sticky;
         top: 0px;
@@ -119,4 +114,7 @@ $distance:200px;
         padding-left: 10px;
         padding-right: 10px;
     }
+
+
 }
+

@@ -16,12 +16,11 @@ $-distance : -200px;
 }
 
 .background-wrapper {
-    width: 514px;
+    width: 314px;
     height: 800px;
     top: -266px;
     right: 0;
     position: absolute;
-    margin-right: $-distance;
     background-image: url('../../assets/background-img/bg1.png');
     background-repeat: no-repeat;
 
@@ -134,5 +133,9 @@ p {
     .content{
         padding-left:$distance;
         padding-right:$distance;
+    }
+
+    .background-wrapper{
+        margin-right:-10px;
     }
 }
