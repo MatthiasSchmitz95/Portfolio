@@ -7,14 +7,13 @@ import { MyServiceService } from '../my-service.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  clicked = true;
+
   constructor(private myService: MyServiceService) {
 
   }
   public scrollTo(elementId: string, spanId: string): void {
     this.myService.scrollTo(elementId);
     this.closeMenu();
-
     this.addUnderline(spanId);
 
   }
@@ -22,7 +21,7 @@ export class HeaderComponent {
   openBurgerMenu() {
 
 
-    if (this.clicked) {
+    if (this.myService.clicked) {
       this.openMenu();
 
     }
@@ -45,7 +44,7 @@ export class HeaderComponent {
   openMenu() {
     let menu = document.getElementById('hidden-menu');
     menu.classList.add('menu-position-clicked');
-    this.clicked = false;
+    this.myService.clicked = false;
     this.disableScroll();
 
   }
@@ -53,7 +52,7 @@ export class HeaderComponent {
   closeMenu() {
     let menu = document.getElementById('hidden-menu');
     menu.classList.remove('menu-position-clicked');
-    this.clicked = true;
+    this.myService.clicked = true;
     this.enableScroll();
 
   }

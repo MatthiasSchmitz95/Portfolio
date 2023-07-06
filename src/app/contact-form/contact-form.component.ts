@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contact-form',
@@ -6,20 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent {
-  inputCheck(inputId:string,errId:string){
- 
+
+  @ViewChild('myForm') myForm: ElementRef;
+  @ViewChild('nameField') nameField: ElementRef;
+  @ViewChild('emailField') emailField: ElementRef;
+  @ViewChild('textField') textField: ElementRef;
+  @ViewChild('send') send: ElementRef;
+
+
+
+  inputCheck(inputId: string, errId: string) {
     console.log(inputId);
     let check = document.getElementById(inputId) as HTMLInputElement;
     let err = document.getElementById(errId);
     const isValid = check.checkValidity();
-    
+
     if (check.value.length > 2 && isValid) {
       check.classList.remove('error');
       check.classList.add('viable');
       err.style.display = 'none';
     }
 
-    else{
+    else {
       check.classList.remove('viable');
       check.classList.add('error');
       err.style.display = 'block';
@@ -27,23 +35,58 @@ export class ContactFormComponent {
 
   }
 
-  textCheck(textId:string,errId:string){
-   
+  textCheck(textId: string, errId: string) {
+
     console.log(textId);
     let check = document.getElementById(textId) as HTMLInputElement;
     let err = document.getElementById(errId);
-    
+
     if (check.value.length > 2) {
       check.classList.remove('err-message');
       check.classList.add('viable-message');
       err.style.display = 'none';
     }
 
-    else{
+    else {
       check.classList.remove('viable-message');
       check.classList.add('err-message');
       err.style.display = 'flex';
     }
+
+  }
+
+  async sendMail() {
+    //action="https://matthias-schmitz.developerakademie.net/send_mail.php"
+    let nameField = document.getElementById('inputName') as HTMLInputElement;
+    let emailField = document.getElementById('inputEmail') as HTMLInputElement;
+    let textField = document.getElementById('inputMessage') as HTMLInputElement;
+    let send = this.send.nativeElement;
+
+    nameField.disabled = true;
+    emailField.disabled = true;
+    textField.disabled = true;
+    send.disabled = true;
+    //Animation
+
+    let fd = new FormData();
+    fd.append('name', nameField.value);
+    fd.append('email', emailField.value);
+    fd.append('text', textField.value);
+    //senden
+
+
+    await fetch('https://matthias-schmitz.developerakademie.net/send_mail.php',
+      {
+        method: 'POST',
+        body: fd
+      }
+    );
+
+    //text anzeigen
+    nameField.disabled = false;
+    emailField.disabled = false;
+    textField.disabled = false;
+    send.disabled = false;
 
   }
 

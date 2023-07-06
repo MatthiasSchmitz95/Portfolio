@@ -1,9 +1,9 @@
 .content{
     display: flex;
     align-items: center;
-    
+    position: relative;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 13;
     position: relative;
 }
 
@@ -60,16 +60,22 @@ a{
 .github{
     border: 1px solid #00BEE8;
     background-color: transparent;
-    margin-left: 50px;
 }
 
 .reverse-row{
     flex-direction:row-reverse ;
 }
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+
+}
 
 
 
-@media(max-width:1000px){
+@media(max-width:1025px){
 
     .content{
         margin-bottom: 100px;
@@ -83,6 +89,9 @@ a{
         }
     }
     .order{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h3{
             display: flex;
@@ -99,12 +108,13 @@ a{
         }
         
     }
-    
     .button-container{
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        
     
     }
+
 
 }
 

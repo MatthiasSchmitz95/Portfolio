@@ -1,3 +1,16 @@
+.transparent-input:-webkit-autofill,
+.transparent-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white !important; /* Set text color to white */
+  -webkit-background-clip: text !important; /* Use text as background clip */
+  background-color: transparent !important; /* Set background color to transparent */
+  background-image : url('../../assets/background-img/green-check.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 21px;
+
+  -webkit-box-shadow: none !important; /* Remove box shadow */
+  transition: background-color 5000s ease-in-out 0s; /* Prevent Chrome from applying its transition */
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -159,6 +172,32 @@ input {
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) 21px;
 }
+
+
+button[disabled] {
+    background-color: #a9cad1; /* Apply your desired background color for disabled button */
+    cursor: not-allowed; /* Set cursor style to not-allowed to indicate it's disabled */
+    /* Add any additional styles as needed */
+  }
+  
+  button[disabled]:hover {
+    background-color: #a9cad1;
+    width: 253px;
+    height: 58px;
+    padding:15px 30px 15px 30px;
+     /* Apply the same background color for disabled button on hover */
+    /* Add any additional styles as needed */
+  }
+
+  input[disabled]{
+    background-color: #a9cad1 !important;
+
+  }
+
+  textarea[disabled]{
+    background-color: #a9cad1;
+
+  }
 
 
 @media(max-width:729px){

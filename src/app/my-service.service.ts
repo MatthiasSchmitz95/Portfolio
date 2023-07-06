@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MyServiceService {
+  clicked = true;
   scrollTo(id:string){
     document.getElementById(id).scrollIntoView({
       behavior: 'smooth'

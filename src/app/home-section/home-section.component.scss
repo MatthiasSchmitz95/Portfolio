@@ -1,4 +1,4 @@
-$distance : 15%;
+$distance : 200px;
 $-distance : -22%;
 
 .content {
@@ -6,6 +6,9 @@ $-distance : -22%;
     flex-direction: column;
     justify-content: space-between;
     background-color: #141D2F;
+    padding-left: $distance;
+    padding-right: $distance;
+    padding-top: 59px;
 
 }
 
@@ -98,7 +101,7 @@ $-distance : -22%;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
     }
-
+    
     margin-top: 30px;
     margin-bottom: 10px;
     display: flex;
@@ -106,7 +109,7 @@ $-distance : -22%;
     justify-content: space-between;
     min-height: 200px;
     z-index: 16;
-    margin-left: $-distance;
+    margin-left: -200px;
 
 
 
@@ -238,9 +241,10 @@ p {
     }
 }
 
-@media(max-width:700px){
+@media(max-width:900px){
+
     .background-wrapper{
-        background-position: -100px -60px;
+        left: 0;
         margin-top: -100px;
         
     }
@@ -277,9 +281,18 @@ p {
 
 }
 
-@media(max-width:1000px) {
+@media(max-width:1025px) {
     .content-head {
         flex-direction: column;
+    }
+    $distance : 10px;
+
+    .content{
+        padding-left:$distance;
+        padding-right:$distance;
+    }
+    .socials{
+        margin-left: -20px;
     }
 
     .profile-img-container {
@@ -313,9 +326,6 @@ p {
         display: none;
     }
 
-    .socials {
-        margin-left: -5%;
-    }
 
     .responsive {
 

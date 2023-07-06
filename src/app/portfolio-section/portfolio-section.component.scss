@@ -1,4 +1,4 @@
-$distance : 15%;
+$distance : 200px;
 $-distance : -22%;
 .header {
     display: flex;
@@ -17,11 +17,16 @@ $-distance : -22%;
 
 .content {
     position: relative;
+    padding-left: $distance;
+    padding-right: $distance;
 
     span {
         position: absolute;
         background-color: #4B47FF;
-        height: 4px;
+        height: 0px;
+        border: 4px solid #4B47FF;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
     }
 
     h2 {
@@ -50,10 +55,9 @@ $-distance : -22%;
 
     width: 944px;
     height: 1009px;
-    top: 630px;
-    left: 0px;
+    top: 116px;
+    left: -63px;
     position: absolute;
-    margin-left: $-distance;
     background-image: url('../../assets/background-img/bg3.png');
     background-repeat: no-repeat;
     background-position: -34px 108px;
@@ -70,7 +74,6 @@ $-distance : -22%;
     bottom: -224px;
     right: 0px;
     position: absolute;
-    margin-right: $-distance;
     background-image: url('../../assets/background-img/bg4.png');
     background-repeat: no-repeat;
     background-position: 19px -295px;
@@ -78,9 +81,20 @@ $-distance : -22%;
 
     }
     
-    @media(max-width:1000px){
+    @media(max-width:1025px){
+        $distance : 10px;
         .background-wrapper{
             transform: scale(0.7);
 
+        }
+        .content{
+            text-align: center;
+           
+            padding-left: $distance;
+            padding-right: $distance;
+        }
+
+        .background-wrapper-bottom{
+            margin-right:-10px;
         }
     }

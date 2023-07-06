@@ -1,0 +1,12 @@
+img{
+    width: 50px;
+    filter: invert(66%) sepia(27%) saturate(5568%) hue-rotate(147deg) brightness(95%) contrast(100%);
+    margin-right: 20px;
+}
+
+
+.logo-container{
+display: flex;
+align-items: center;
+font-size: 40px;
+}

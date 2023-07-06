@@ -7,7 +7,7 @@ import { MyServiceService } from '../my-service.service';
   styleUrls: ['./menu-slide-container.component.scss']
 })
 export class MenuSlideContainerComponent {
-  clicked= true;
+
   constructor(private myService: MyServiceService){
     
   }
@@ -27,7 +27,7 @@ export class MenuSlideContainerComponent {
 closeMenu() {
   let menu = document.getElementById('hidden-menu');
   menu.classList.remove('menu-position-clicked');
-  this.clicked= false;
+  this.myService.clicked = true;
   this.enableScroll();
 }
 

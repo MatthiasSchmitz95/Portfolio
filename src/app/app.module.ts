@@ -13,6 +13,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
 import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { MenuSlideContainerComponent } from './menu-slide-container/menu-slide-container.component';
+import { LogoComponent } from './logo/logo.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,15 @@ import { MenuSlideContainerComponent } from './menu-slide-container/menu-slide-c
     ContactSectionComponent,
     FooterComponent,
     ContactFormComponent,
-    MenuSlideContainerComponent
+    MenuSlideContainerComponent,
+    LogoComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

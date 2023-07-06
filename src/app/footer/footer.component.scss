@@ -1,4 +1,4 @@
-$distance : 15%;
+$distance:200px;
 $-distance : -22%;
 
 .content{
@@ -7,10 +7,9 @@ $-distance : -22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding-left: $distance;
+    padding-right: $distance;
     border-top: 4px solid #00BEE8;
-    margin-left: $-distance;
-    margin-right: $-distance;
 
     img{
         width: 30px;
@@ -41,10 +40,29 @@ $-distance : -22%;
 
 .socials{
     width: 100%;
-    padding-left: $distance;
-    padding-right: $distance;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+@media(max-width:1025px){
+    $distance : 10px;
+
+    .content{
+        padding-left:$distance;
+        padding-right:$distance;
+        margin-left:-10px;
+        margin-right:-10px;
+    }
+}
+
+@media(max-width:800px){
+.socials{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+
+}
 
 }

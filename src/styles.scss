@@ -1,12 +1,11 @@
-$distance : 15%;
+$distance : 200px;
 /* You can add global styles to this file, and also import other style files */
 body {
   font-family: 'poppins';
   margin: 0px;
   overflow-x: hidden;
   background-color: #141D2F;
-  padding-left: $distance;
-  padding-right: $distance;
+
 }
 
 button {
@@ -31,8 +30,7 @@ a {
 
 @media(max-width:1450px) {
   body{
-    padding-left: 10%;
-    padding-right: 10%;
+
   };
 }
 
