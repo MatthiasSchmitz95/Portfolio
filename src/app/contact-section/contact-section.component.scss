@@ -101,10 +101,14 @@ span {
 
 @media(max-width:1025px) {
     .line {
-        margin-left: -6%;
+        margin-left: -10px;
         width: 20px;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
+    }
+
+    h2{
+        margin-left: 30px;
     }
 
     .contact-container {
@@ -124,5 +128,11 @@ span {
         
             margin-left:-10px;
        
+    }
+}
+
+@media(max-width:800px){
+    .background-wrapper{
+        background-position-y: 597px;
     }
 }

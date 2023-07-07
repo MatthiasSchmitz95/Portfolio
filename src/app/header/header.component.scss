@@ -10,11 +10,14 @@ $distance:200px;
     color: white;
     padding-bottom: 10px;
     position: fixed;
+    right: 0;
+    position: fixed;
     z-index: 20;
-    width: 100%;
     padding-left: $distance;
-
+    left: 0;
+    padding-right: $distance;
 }
+
 
 .menu {
     display: flex;
@@ -22,7 +25,6 @@ $distance:200px;
     gap: 29px;
     font-size: 23px;
     transition: 200ms;
-    padding-right: 400px;
 
     p {
         border-bottom: transparent 3px solid;
@@ -60,10 +62,6 @@ $distance:200px;
     position: absolute;
     right: -5000px;
     display: none;
-
-
-
-
 }
 
 
@@ -103,14 +101,11 @@ $distance:200px;
         z-index: 15;
     }
     .content {
-        position: sticky;
         top: 0px;
         margin-bottom: 30px;
         z-index: 20;
         left: 0;
         right: 0;
-        margin-left: -10px;
-        margin-right: -10px;
         padding-left: 10px;
         padding-right: 10px;
     }

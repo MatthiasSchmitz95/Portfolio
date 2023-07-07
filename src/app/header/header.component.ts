@@ -19,14 +19,12 @@ export class HeaderComponent {
   }
 
   openBurgerMenu() {
-
-
     if (this.myService.clicked) {
       this.openMenu();
+      
 
     }
     else {
-
       this.closeMenu();
     }
 
@@ -46,6 +44,7 @@ export class HeaderComponent {
     menu.classList.add('menu-position-clicked');
     this.myService.clicked = false;
     this.disableScroll();
+   // this.changeImg();
 
   }
 
@@ -54,6 +53,7 @@ export class HeaderComponent {
     menu.classList.remove('menu-position-clicked');
     this.myService.clicked = true;
     this.enableScroll();
+  //  this.changeImg();
 
   }
 
@@ -64,5 +64,22 @@ export class HeaderComponent {
   enableScroll() {
     document.body.style.overflowY = 'auto';
 
+  }
+
+  changeImg(){
+    let burger = document.getElementById('burger') as HTMLImageElement;
+    if(!this.myService.clicked){
+      burger.src = "assets/burger/burger-half-closed.png";
+      setTimeout(()=>{
+        burger.src = "assets/burger/burger-closed.png";
+      },100);
+      
+    }
+    else{
+      burger.src = "assets/burger/burger-standard.png";
+    }
+    
+
+    
   }
 }

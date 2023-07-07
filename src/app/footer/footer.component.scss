@@ -24,16 +24,16 @@ $-distance : -22%;
 
 .img-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .img-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+
 
     width: 40px;
 }
@@ -52,8 +52,7 @@ $-distance : -22%;
     .content{
         padding-left:$distance;
         padding-right:$distance;
-        margin-left:-10px;
-        margin-right:-10px;
+
     }
 }
 

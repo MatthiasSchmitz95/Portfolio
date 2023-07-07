@@ -101,7 +101,7 @@ $-distance : -22%;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
     }
-    
+
     margin-top: 30px;
     margin-bottom: 10px;
     display: flex;
@@ -198,11 +198,9 @@ p {
 
 }
 
-@media(max-width:1700px) {
 
-}
 
-@media(max-width:1280px) {
+@media(max-width:1300px) {
     .profile-img-container {
 
         img {
@@ -241,27 +239,30 @@ p {
     }
 }
 
-@media(max-width:1025px) {
+@media(max-width:1204px) {
     .content-head {
         flex-direction: column;
     }
+
     $distance : 10px;
 
-    .content{
-        padding-left:$distance;
-        padding-right:$distance;
+    .content {
+        padding-left: $distance;
+        padding-right: $distance;
     }
-    .socials{
+
+    .socials {
         margin-left: -20px;
     }
 
     .profile-img-container {
         justify-content: center;
         display: flex;
-        img{
+
+        img {
             height: 608px;
         }
-       
+
     }
 
     .name-container {
@@ -270,7 +271,7 @@ p {
     }
 
     .vector-import {
-        top: 389px;
+        top: 351px;
 
     }
 
@@ -294,19 +295,20 @@ p {
     }
 }
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .background-wrapper{
+    .background-wrapper {
         left: 0;
         margin-top: -100px;
-        
+
     }
-    
+
 }
 
-@media(max-width:800px){
-    .vector-import{
-        top: 557px;
+@media(max-width:800px) {
+    .vector-import {
+        top: 442px;
+
     }
 }
 
@@ -330,13 +332,19 @@ p {
 
     }
 
-    .vector-import{
-        top: 551px !important;
+    .vector-import {
+        top: 534px !important;
 
     }
-    .background-wrapper{
+
+    .background-wrapper {
         background-position: -174px -60px;
     }
 
 }
 
+@media(min-width:1934px){
+    .vector-import{
+        top: 78px;
+    }
+}

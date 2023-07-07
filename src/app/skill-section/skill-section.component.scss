@@ -151,7 +151,7 @@ button {
     margin-bottom: -345px;
     background-image: url('../../assets/background-img/bg2.png');
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: -1;
 
 }
 
@@ -165,8 +165,8 @@ button {
     .content {
         flex-direction: column-reverse;
         align-items: flex-end;
-        padding-left: $distance;
-        padding-right: $distance;
+        padding-left: 10px;
+        padding-right: 10px;
 
         h2 {
             margin-right: 30px;

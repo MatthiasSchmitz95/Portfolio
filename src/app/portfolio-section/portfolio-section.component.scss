@@ -1,5 +1,6 @@
 $distance : 200px;
 $-distance : -22%;
+
 .header {
     display: flex;
     flex-direction: column;
@@ -55,8 +56,8 @@ $-distance : -22%;
 
     width: 944px;
     height: 1009px;
-    top: 116px;
-    left: -63px;
+    top: 594px;
+    left: -182px;
     position: absolute;
     background-image: url('../../assets/background-img/bg3.png');
     background-repeat: no-repeat;
@@ -67,7 +68,7 @@ $-distance : -22%;
 
 }
 
-.background-wrapper-bottom{
+.background-wrapper-bottom {
 
     width: 393px;
     height: 716px;
@@ -79,22 +80,30 @@ $-distance : -22%;
     background-position: 19px -295px;
     z-index: 0;
 
-    }
-    
-    @media(max-width:1025px){
-        $distance : 10px;
-        .background-wrapper{
-            transform: scale(0.7);
+}
 
-        }
-        .content{
-            text-align: center;
-           
-            padding-left: $distance;
-            padding-right: $distance;
-        }
+@media(max-width:1025px) {
+    $distance : 10px;
 
-        .background-wrapper-bottom{
-            margin-right:-10px;
-        }
+    .background-wrapper {
+        transform: scale(0.7);
+
     }
+
+    .content {
+        text-align: center;
+        padding-left: $distance;
+        padding-right: $distance;
+    }
+
+    .background-wrapper-bottom {
+        margin-right: -10px;
+    }
+}
+
+@media(max-width:800px) {
+    .background-wrapper {
+        left: -275px;
+    }
+
+}
