@@ -103,16 +103,50 @@ input {
 }
 
 .send-container {
+    position: relative;
     width: 100%;
     height: 68px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 
 }
 
+.outer-ring {
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    background-image: linear-gradient(135deg, #FEED07 0%, #FE6A50 5%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
+    border-radius: 50%;
+    
+    /*  Rotate  */
+    animation-duration: 2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inner-ring {
+    right: 0px;
+    height: 26px;
+    width: 26px;
+    background-color:#141D2F ;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate {
+      0% {transform:rotate(0deg);}
+      100% {transform:rotate(360deg);}
+  }
+  
+  
+
 .send {
-    margin-top: 30px;
+
     padding: 15px 30px 15px 30px;
     background-color: #00BEE8;
     width: 253px;

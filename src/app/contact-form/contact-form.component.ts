@@ -61,20 +61,14 @@ export class ContactFormComponent {
     let emailField = document.getElementById('inputEmail') as HTMLInputElement;
     let textField = document.getElementById('inputMessage') as HTMLInputElement;
     let send = this.send.nativeElement;
-
-    nameField.disabled = true;
-    emailField.disabled = true;
-    textField.disabled = true;
-    send.disabled = true;
+    this.disableFields();
     //Animation
 
+    this.showLoading();
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('email', emailField.value);
     fd.append('text', textField.value);
-    //senden
-
-
     await fetch('https://matthias-schmitz.developerakademie.net/send_mail.php',
       {
         method: 'POST',
@@ -82,13 +76,58 @@ export class ContactFormComponent {
       }
     );
 
-    //text anzeigen
+    this.enableFields();
+    this.finishedLoading();
+    this.resetValue();
+
+  }
+
+  disableFields() {
+    let nameField = document.getElementById('inputName') as HTMLInputElement;
+    let emailField = document.getElementById('inputEmail') as HTMLInputElement;
+    let textField = document.getElementById('inputMessage') as HTMLInputElement;
+    let send = this.send.nativeElement;
+    nameField.disabled = true;
+    emailField.disabled = true;
+    textField.disabled = true;
+    send.disabled = true;
+
+  }
+
+  enableFields() {
+    let nameField = document.getElementById('inputName') as HTMLInputElement;
+    let emailField = document.getElementById('inputEmail') as HTMLInputElement;
+    let textField = document.getElementById('inputMessage') as HTMLInputElement;
+    let send = this.send.nativeElement;
+
     nameField.disabled = false;
     emailField.disabled = false;
     textField.disabled = false;
     send.disabled = false;
+  }
+
+  resetValue() {
+    let nameField = document.getElementById('inputName') as HTMLInputElement;
+    let emailField = document.getElementById('inputEmail') as HTMLInputElement;
+    let textField = document.getElementById('inputMessage') as HTMLInputElement;
+    let send = this.send.nativeElement;
+
+    nameField.value = '';
+    emailField.value = '';
+    textField.value = '';
 
   }
+
+  showLoading(){
+    document.getElementById('loader').style.display = '';
+  }
+
+  finishedLoading(){
+    document.getElementById('loader').style.display = 'none';
+
+  }
+
+  
 
 
 }
