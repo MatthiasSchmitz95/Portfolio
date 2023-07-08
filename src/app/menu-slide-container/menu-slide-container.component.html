@@ -1,6 +1,18 @@
 <div class="responsive-menu">
-    <p (click)="scrollTo('about-me')">About me</p>
-    <p (click)="scrollTo('skills')">Skills</p>
-    <p (click)="scrollTo('portfolio')">Portfolio</p>
-    <p (click)="scrollTo('contact')">Contact</p>
+        <div class="item-wrapper" >
+            <p (click)="scrollTo('about','span-about2')">About me</p>
+            <span id="span-about2" class="underline" style="display: none;"></span>
+        </div>
+        <div class="item-wrapper" >
+            <p (click)="scrollTo('skills','span-skills2')">Skills</p>
+            <span id="span-skills2" class="underline" style="display: none;"></span>
+        </div>
+        <div class="item-wrapper">
+            <p (click)="scrollTo('portfolio','span-portfolio2')">Portfolio</p>
+            <span id="span-portfolio2" class="underline" style="display: none;"></span>
+        </div>
+        <div class="item-wrapper" >
+            <p (click)="scrollTo('contact','span-contact2')">Contact</p>
+            <span id="span-contact2" class="underline" style="display: none;"></span>
+       
 </div>

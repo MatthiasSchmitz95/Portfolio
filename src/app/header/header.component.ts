@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { MyServiceService } from '../my-service.service';
 
 @Component({
@@ -7,79 +7,93 @@ import { MyServiceService } from '../my-service.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  sectionIds: string[] = ['about', 'portfolio', 'skills', 'contact'];
+  observer: IntersectionObserver;
 
-  constructor(private myService: MyServiceService) {
-
+  constructor(private renderer: Renderer2, private myService: MyServiceService) {
+    this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    });
   }
-  public scrollTo(elementId: string, spanId: string): void {
+
+  ngOnInit() {
+    this.sectionIds.forEach((sectionId) => {
+      const sectionElement = document.getElementById(sectionId);
+      if (sectionElement) {
+        this.observer.observe(sectionElement);
+      }
+    });
+  }
+
+  public scrollTo(elementId: string): void {
     this.myService.scrollTo(elementId);
     this.closeMenu();
-    this.addUnderline(spanId);
-
   }
 
   openBurgerMenu() {
     if (this.myService.clicked) {
       this.openMenu();
-      
-
-    }
-    else {
+    } else {
       this.closeMenu();
     }
-
   }
 
   addUnderline(spanId) {
-    document.getElementById('span-about-me').style.display = "none";
-    document.getElementById('span-skills').style.display = "none";
-    document.getElementById('span-portfolio').style.display = "none";
-    document.getElementById('span-contact').style.display = "none";
-    document.getElementById(spanId).style.display = "block";
-
+    const spanElements = ['about', 'skills', 'portfolio', 'contact'];
+    console.log('addUnderline called for spanId:', spanId);
+    spanElements.forEach((element) => {
+      const span = document.getElementById('span-' + element);
+      if (span) {
+        this.renderer.setStyle(span, 'display', 'none');
+      }
+    });
+    const selectedSpan = document.getElementById('span-' + spanId);
+    if (selectedSpan) {
+      this.renderer.setStyle(selectedSpan, 'display', 'block');
+    }
   }
 
   openMenu() {
     let menu = document.getElementById('hidden-menu');
-    menu.classList.add('menu-position-clicked');
+    if (menu) {
+      menu.classList.add('menu-position-clicked');
+    }
     this.myService.clicked = false;
     this.disableScroll();
-   // this.changeImg();
-
+    this.myService.changeImg();
   }
 
   closeMenu() {
     let menu = document.getElementById('hidden-menu');
-    menu.classList.remove('menu-position-clicked');
+    if (menu) {
+      menu.classList.remove('menu-position-clicked');
+    }
     this.myService.clicked = true;
     this.enableScroll();
-  //  this.changeImg();
-
+    this.myService.changeImg();
   }
 
   disableScroll() {
-    document.body.style.overflow = 'hidden';
+    this.renderer.setStyle(document.body, 'overflow', 'hidden');
   }
 
   enableScroll() {
-    document.body.style.overflowY = 'auto';
-
+    this.renderer.setStyle(document.body, 'overflowY', 'auto');
   }
 
-  changeImg(){
-    let burger = document.getElementById('burger') as HTMLImageElement;
-    if(!this.myService.clicked){
-      burger.src = "assets/burger/burger-half-closed.png";
-      setTimeout(()=>{
-        burger.src = "assets/burger/burger-closed.png";
-      },100);
-      
-    }
-    else{
-      burger.src = "assets/burger/burger-standard.png";
-    }
-    
-
-    
+  handleIntersection(entries: IntersectionObserverEntry[], observer: IntersectionObserver): void {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const sectionId = entry.target.id;
+        const sectionElement = document.getElementById(sectionId);
+        if (sectionElement) {
+          sectionElement.style.display = 'block';
+          const spanId = sectionId.replace('-', '');
+          this.addUnderline(spanId);
+        }
+      }
+    });
   }
 }

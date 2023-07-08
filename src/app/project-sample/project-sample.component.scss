@@ -3,7 +3,7 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
-    z-index: 13;
+    z-index: 5;
     position: relative;
 }
 
@@ -54,12 +54,22 @@ a{
 .test{
     background-color: #4B47FF;
     border: none;
+
+    &:active{
+        background-color: white;
+        color: #4B47FF;
+    }
 }
 
 
 .github{
     border: 1px solid #00BEE8;
     background-color: transparent;
+
+    &:active{
+        background-color: white;
+        color: #00BEE8;
+    }
 }
 
 .reverse-row{
@@ -75,7 +85,7 @@ a{
 
 
 
-@media(max-width:1025px){
+@media(max-width:1279px){
 
     .content{
         margin-bottom: 100px;

@@ -167,6 +167,7 @@ p {
     align-items: center;
     justify-content: center;
     z-index: 7 !important;
+    margin-top: 8px;
 }
 
 .home-button {
@@ -187,6 +188,21 @@ p {
 
     }
 
+    &:active {
+        background-color: white;
+        color: black;
+    }
+
+
+}
+
+.home-button:active{
+    background-color: white;
+    color: black;
+    width: 165px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+
 }
 
 .vector-import {
@@ -200,7 +216,7 @@ p {
 
 
 
-@media(max-width:1300px) {
+@media(max-width:1407px) {
     .profile-img-container {
 
         img {
@@ -213,7 +229,7 @@ p {
     }
 
     .vector-import {
-        top: 165px;
+        top: 124px;
     }
 
 

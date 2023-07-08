@@ -24,7 +24,6 @@ export class SkillSectionComponent {
 
   }
   public scrollTo(elementId: string): void {
-    debugger;
     this.myService.scrollTo(elementId);
   }
 

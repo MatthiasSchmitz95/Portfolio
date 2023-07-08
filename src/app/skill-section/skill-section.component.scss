@@ -26,7 +26,7 @@ p {
     align-items: center;
     background-color: #141D2F;
     z-index: 3;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     padding-left: 200px;
     padding-right: 200px;
 
@@ -123,6 +123,11 @@ button {
 
 
     }
+
+    &:active {
+        background-color: white;
+        color: black;
+    }
 }
 
 .responsive {
@@ -155,6 +160,28 @@ button {
 
 }
 
+@media(max-width:1494px){
+    .content{
+        flex-direction: column-reverse;
+        align-items: flex-end;;
+    }
+    .skill-info {
+        align-items: flex-end;
+
+        span {
+            margin-right: -20px;
+            width: 28px;
+        }
+
+        p {
+            text-align: right;
+        }
+
+    }
+
+
+}
+
 @media(max-width:1200px) {
     .skill-icon {
         margin-right: 41px;
@@ -163,8 +190,7 @@ button {
 
 @media(max-width:1025px) {
     .content {
-        flex-direction: column-reverse;
-        align-items: flex-end;
+
         padding-left: 10px;
         padding-right: 10px;
 
@@ -182,19 +208,7 @@ button {
 .background-wrapper{
     margin-left:-10px
 }
-    .skill-info {
-        align-items: flex-end;
 
-        span {
-            margin-right: -20px;
-            width: 28px;
-        }
-
-        p {
-            text-align: right;
-        }
-
-    }
 
     .skill-icons {
         grid-template-columns: auto auto auto;

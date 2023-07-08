@@ -7,6 +7,7 @@ import { MyServiceService } from '../my-service.service';
   styleUrls: ['./home-section.component.scss']
 })
 export class HomeSectionComponent {
+
   sources = [
     'assets/icons/Github button.svg',
     'assets/icons/Email button.svg',
@@ -15,7 +16,7 @@ export class HomeSectionComponent {
   links =[
     "https://github.com/MatthiasSchmitz95",
     "mailto:your-email@example.com",
-    "https://github.com/MatthiasSchmitz95"
+    "https://www.linkedin.com/in/matthias-schmitz-1ba787282/"
 
   ]
   constructor(private myService: MyServiceService){
