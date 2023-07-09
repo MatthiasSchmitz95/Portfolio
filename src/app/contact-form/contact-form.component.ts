@@ -68,7 +68,7 @@ export class ContactFormComponent {
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('email', emailField.value);
-    fd.append('text', textField.value);
+    fd.append('message', textField.value);
     await fetch('https://matthias-schmitz.developerakademie.net/send_mail.php',
       {
         method: 'POST',
@@ -124,6 +124,12 @@ export class ContactFormComponent {
 
   finishedLoading(){
     document.getElementById('loader').style.display = 'none';
+    document.getElementById('success').style.display = 'block';
+    setTimeout(()=>{
+      document.getElementById('success').style.display = 'none';
+    },4000)
+
+    
 
   }
 

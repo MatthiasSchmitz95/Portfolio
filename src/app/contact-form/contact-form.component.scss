@@ -113,6 +113,25 @@ input {
 
 }
 
+.success-sent{
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    width: 40px;
+    animation-duration: 5s;
+    animation-name: fade;
+}
+
+
+@keyframes fade{
+    0% {opacity: 100%;}
+    20% {opacity: 80%;}
+    40% {opacity: 40%;}
+    80% {opacity: 20%;}
+    
+    100% {opacity: 0%;}
+}
+
 .outer-ring {
     position: absolute;
     right: 0px;
@@ -243,6 +262,10 @@ button[disabled] {
 
     .message{
         width: 247px;
+    }
+
+    .outer-ring{
+        right: -30px;
     }
 
 }

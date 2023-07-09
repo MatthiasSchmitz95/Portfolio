@@ -11,6 +11,7 @@ $-distance : -200px;
     padding-bottom: 250px;
     padding-left:$distance;
     padding-right: $distance;
+    padding-top: $distance;
 
 
 }
@@ -48,7 +49,7 @@ p {
 
 .right-container {
     span {
-        width: 300px;
+        width: 200px;
         height: 4px;
         background-color: #00BEE8;
         position: relative !important;
@@ -117,10 +118,35 @@ p {
     align-items: center;
 }
 
-@media(max-width:1025px){
+@media(max-width:1380px){
+   .img-container{
+    width: 300px;
+    height: 300px;
+
+    img{
+        height: 673px;
+        position: absolute;
+        top: -28px;
+
+    }
+   }
+
+   .left-container{
+    margin-right: 70px;
+   }
+   
+
+}
+
+
+@media(max-width:1205px){
     .right-container{
         display: none;
     }
+
+}
+
+@media(max-width:1025px){
     .left-container{
         width: 100%;
         margin-right: 0px;
@@ -128,7 +154,7 @@ p {
         position: relative;
     }
 
-    $distance : 10px;
+    $distance : 32px;
 
     .content{
         padding-left:$distance;
@@ -136,6 +162,6 @@ p {
     }
 
     .background-wrapper{
-        margin-right:-10px;
+        margin-right:-32px;
     }
 }

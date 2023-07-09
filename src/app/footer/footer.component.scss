@@ -47,7 +47,7 @@ $-distance : -22%;
 }
 
 @media(max-width:1025px){
-    $distance : 10px;
+    $distance : 32px;
 
     .content{
         padding-left:$distance;
@@ -62,6 +62,11 @@ $-distance : -22%;
     justify-content: space-between;
     height: 80%;
 
+}
+
+.img-wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 }

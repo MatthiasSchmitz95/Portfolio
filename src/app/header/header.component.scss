@@ -90,6 +90,8 @@ $distance:200px;
 }
 
 @media(max-width:1025px) {
+
+    $distance:32px;
     .menu {
         display: none;
 
@@ -106,8 +108,8 @@ $distance:200px;
         z-index: 20;
         left: 0;
         right: 0;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: $distance;
+        padding-right: $distance;
     }
 
 

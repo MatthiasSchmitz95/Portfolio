@@ -16,6 +16,7 @@ button {
 h2 {
   color: white;
   font-size: 90px;
+  margin: 0px;
 
 }
 
@@ -34,6 +35,28 @@ a {
     font-size: 45px !important;
   }
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #00bee8 #141d2f;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #141d2f;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #00bee8;
+    border-radius: 13px;
+    border: 0px solid #ffffff;
+  }
 
 
 

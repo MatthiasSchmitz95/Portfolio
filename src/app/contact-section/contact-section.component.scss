@@ -6,7 +6,8 @@ $-distance : -22%;
 p {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
+    margin-top: 30px;
 }
 
 span {
@@ -16,7 +17,7 @@ span {
 .content {
     color: white;
     position: relative;
-    padding-left:$distance;
+    padding-left: $distance;
     padding-right: $distance;
 
 
@@ -101,15 +102,11 @@ span {
 
 @media(max-width:1025px) {
     .line {
-        margin-left: -10px;
         width: 20px;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
     }
 
-    h2{
-        margin-left: 30px;
-    }
 
     .contact-container {
         display: flex;
@@ -117,22 +114,20 @@ span {
         align-items: flex-start;
     }
 
-    $distance : 10px;
+    $distance : 32px;
 
-    .content{
-        padding-left:$distance;
-        padding-right:$distance;
+    .content {
+        padding-left: $distance;
+        padding-right: $distance;
     }
 
-    .background-wrapper{
-        
-            margin-left:-10px;
-       
+    .background-wrapper {
+        margin-left: -32px;
     }
 }
 
-@media(max-width:800px){
-    .background-wrapper{
+@media(max-width:800px) {
+    .background-wrapper {
         background-position-y: 597px;
     }
 }
