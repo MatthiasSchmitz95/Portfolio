@@ -118,17 +118,15 @@ input {
     right: 0px;
     height: 40px;
     width: 40px;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-name: fade;
 }
 
 
 @keyframes fade{
     0% {opacity: 100%;}
-    20% {opacity: 80%;}
-    40% {opacity: 40%;}
-    80% {opacity: 20%;}
-    
+    30% {opacity: 60%;}
+    60% {opacity: 30%;}
     100% {opacity: 0%;}
 }
 
@@ -267,6 +265,10 @@ button[disabled] {
     .outer-ring{
         right: -30px;
     }
+
+    .success-sent{
+        right: -30px;
+}
 
 }
 

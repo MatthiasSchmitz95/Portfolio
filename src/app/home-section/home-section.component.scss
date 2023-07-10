@@ -27,7 +27,7 @@ $-distance : -22%;
     padding: 0px;
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 60px;
 
 
 }
@@ -50,7 +50,7 @@ $-distance : -22%;
     justify-content: center;
     align-items: center;
     margin-bottom: 195px;
-    z-index: 4;
+    z-index: 7;
 
 }
 
@@ -103,7 +103,6 @@ $-distance : -22%;
         border-top-right-radius: 25px;
     }
 
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -372,6 +371,16 @@ p {
         background-position: -174px -60px;
     }
 
+    .socials{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-height:750px){
+    .name-container{
+        margin-top: 0px;
+    }
 }
 
 @media(min-width:1934px){

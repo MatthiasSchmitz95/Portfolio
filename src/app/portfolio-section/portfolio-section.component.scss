@@ -30,8 +30,7 @@ p{
         background-color: #4B47FF;
         height: 0px;
         border: 4px solid #4B47FF;
-        border-bottom-left-radius: 25px;
-        border-top-left-radius: 25px;
+
     }
 
     h2 {
@@ -42,7 +41,9 @@ p{
 
 .left {
     width: 109px;
-    left: 0px;
+    left: 100px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
 
 
 }
@@ -50,8 +51,7 @@ p{
 .right {
     width: 484px;
     right: 0px;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
+
 
 }
 
@@ -83,6 +83,12 @@ p{
     background-position: 19px -295px;
     z-index: 0;
 
+}
+
+@media(max-width:1495px){
+    .right{
+        width: 200px;
+    }
 }
 
 @media(max-width:1025px) {

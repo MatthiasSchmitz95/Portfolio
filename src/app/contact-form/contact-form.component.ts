@@ -127,7 +127,7 @@ export class ContactFormComponent {
     document.getElementById('success').style.display = 'block';
     setTimeout(()=>{
       document.getElementById('success').style.display = 'none';
-    },4000)
+    },2500)
 
     
 

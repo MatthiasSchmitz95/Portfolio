@@ -177,6 +177,16 @@ button {
 
     }
 
+    .skill-icons{
+        justify-content: center;
+
+    }
+
+    .skill-icon{
+        margin-right: 0px;
+        margin-left: 100px
+    }
+
 
 }
 
@@ -238,4 +248,10 @@ button {
 
 
 
+}
+
+@media(max-width:505px){
+    .skill-icon{
+        margin-left:30px;
+    }
 }
