@@ -120,6 +120,12 @@ input {
     width: 40px;
     animation-duration: 3s;
     animation-name: fade;
+    display: flex;
+    align-items: center;
+    p{
+        margin-right: 10px;
+        color: #70E61C;
+    }
 }
 
 

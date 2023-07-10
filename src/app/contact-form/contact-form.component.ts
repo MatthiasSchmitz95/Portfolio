@@ -123,14 +123,19 @@ export class ContactFormComponent {
   }
 
   finishedLoading(){
+    let nameField = document.getElementById('inputName') as HTMLInputElement;
+    let emailField = document.getElementById('inputEmail') as HTMLInputElement;
+    let textField = document.getElementById('inputMessage') as HTMLInputElement;
     document.getElementById('loader').style.display = 'none';
-    document.getElementById('success').style.display = 'block';
+    document.getElementById('success').style.display = 'flex';
     setTimeout(()=>{
       document.getElementById('success').style.display = 'none';
     },2500)
 
     
-
+    nameField.classList.remove('viable');
+    emailField.classList.remove('viable');
+    textField.classList.remove('viable-message');
   }
 
   
