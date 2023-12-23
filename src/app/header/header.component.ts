@@ -42,7 +42,7 @@ export class HeaderComponent {
 
   addUnderline(spanId) {
     const spanElements = ['about', 'skills', 'portfolio', 'contact'];
-    console.log('addUnderline called for spanId:', spanId);
+    ('addUnderline called for spanId:', spanId);
     spanElements.forEach((element) => {
       const span = document.getElementById('span-' + element);
       if (span) {

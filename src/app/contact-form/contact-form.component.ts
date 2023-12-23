@@ -16,7 +16,7 @@ export class ContactFormComponent {
 
 
   inputCheck(inputId: string, errId: string) {
-    console.log(inputId);
+    (inputId);
     let check = document.getElementById(inputId) as HTMLInputElement;
     let err = document.getElementById(errId);
     const isValid = check.checkValidity();
@@ -37,7 +37,7 @@ export class ContactFormComponent {
 
   textCheck(textId: string, errId: string) {
 
-    console.log(textId);
+    (textId);
     let check = document.getElementById(textId) as HTMLInputElement;
     let err = document.getElementById(errId);
 
